@@ -1,6 +1,19 @@
-const repeatString = function() {
-
+const repeatString = function(txt,times) {
+    let x=txt
+    if (times < 0){
+        return console.log("error");
+        
+    }
+    else{
+        for (let i = 1; i < times; i++) {
+            x += txt
+        
+        }
+        return x
+    }
+    
 };
 
-// Do not edit below this line
-module.exports = repeatString;
+
+console.log(repeatString('hi ',10));
+
